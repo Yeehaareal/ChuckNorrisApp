@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 import FirebaseFirestore
 
 class AlbumListViewController: UIViewController {
+    
+    var chuckNorrisJoke = "There must be a Chuck Norris Joke"
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
@@ -19,6 +24,42 @@ class AlbumListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+    }
+    
+    //MARK: - Joke Button
+       
+       
+    @IBAction func chuckNorrisJokeButton(_ sender: Any) {
+           
+           //MARK: - Get data from JSON
+           
+           AF.request("https://api.chucknorris.io/jokes/random", method: .get).responseJSON { (response) in
+               if response.value != nil {
+                   print("We got Chuck Norris Joke, Yes!")
+                   let data = JSON(response.value!)
+                   let joke = data["value"].stringValue
+                   self.chuckNorrisJoke = joke
+                   print(joke)
+                   self.jokeAlert()
+               }else{
+                   print("ERROR \(String(describing: response.error))")
+                   self.jokeAlert()
+               }
+           }
+       }
+    
+    //MARK: - Alert
+    func jokeAlert(){
+        let alert = UIAlertController(title: "Chuck Norris", message: chuckNorrisJoke, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        
+        //Add imageview to alert
+        let imgViewTitle = UIImageView(frame: CGRect(x: 10, y: 10, width: 30, height: 30))
+        imgViewTitle.image = UIImage(named:"chuck-norris.png")
+        alert.view.addSubview(imgViewTitle)
+        
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -8,6 +8,9 @@ target 'SwiftFirestorePhotoAlbum' do
   # Pods for SwiftFirestorePhotoAlbum
   
    pod 'Firebase/Core'
+   pod 'Firebase/Analytics'
    pod 'Firebase/Firestore'
    pod 'Firebase/Storage'
+   pod 'Alamofire', '~> 5.0.0-rc.3'
+   pod 'SwiftyJSON', '~> 4.0'
 end

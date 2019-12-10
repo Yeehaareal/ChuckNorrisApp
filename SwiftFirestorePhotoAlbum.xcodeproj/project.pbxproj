@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		977A8797239F99CB0031C10C /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977A8796239F99CB0031C10C /* AboutMeViewController.swift */; };
+		977A8799239F9F100031C10C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 977A8798239F9F100031C10C /* GoogleService-Info.plist */; };
 		AA4CD3D3DA935B977BB632E3 /* Pods_SwiftFirestorePhotoAlbum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89556B92807D42C49671DAB9 /* Pods_SwiftFirestorePhotoAlbum.framework */; };
-		FA4BF644213DD59A000A5F96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA4BF643213DD59A000A5F96 /* GoogleService-Info.plist */; };
 		FA4BF648213DDB10000A5F96 /* AlbumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4BF647213DDB10000A5F96 /* AlbumService.swift */; };
 		FA4BF64B213DDB78000A5F96 /* AlbumEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4BF64A213DDB78000A5F96 /* AlbumEntity.swift */; };
 		FA84790921517C5F0044EEE5 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84790821517C5F0044EEE5 /* ImageService.swift */; };
@@ -41,8 +42,9 @@
 /* Begin PBXFileReference section */
 		38088408ACF486D2D41E09EE /* Pods-SwiftFirestorePhotoAlbum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFirestorePhotoAlbum.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftFirestorePhotoAlbum/Pods-SwiftFirestorePhotoAlbum.debug.xcconfig"; sourceTree = "<group>"; };
 		89556B92807D42C49671DAB9 /* Pods_SwiftFirestorePhotoAlbum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftFirestorePhotoAlbum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		977A8796239F99CB0031C10C /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
+		977A8798239F9F100031C10C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CC879D8C97A8169EF5D5BCE0 /* Pods-SwiftFirestorePhotoAlbum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFirestorePhotoAlbum.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftFirestorePhotoAlbum/Pods-SwiftFirestorePhotoAlbum.release.xcconfig"; sourceTree = "<group>"; };
-		FA4BF643213DD59A000A5F96 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA4BF647213DDB10000A5F96 /* AlbumService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumService.swift; sourceTree = "<group>"; };
 		FA4BF64A213DDB78000A5F96 /* AlbumEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumEntity.swift; sourceTree = "<group>"; };
 		FA84790821517C5F0044EEE5 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
@@ -65,7 +67,7 @@
 		FAA9D263214EAE14000DE691 /* SelectPhotosViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectPhotosViewController+DataSource.swift"; sourceTree = "<group>"; };
 		FAA9D267214EBC52000DE691 /* SelectPhotosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPhotosCell.swift; sourceTree = "<group>"; };
 		FAA9D269214EEED6000DE691 /* AlbumDetailsViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlbumDetailsViewController+DataSource.swift"; sourceTree = "<group>"; };
-		FAB5226D213D52F200D04742 /* SwiftFirestorePhotoAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftFirestorePhotoAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB5226D213D52F200D04742 /* ChuckNorrisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckNorrisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB52270213D52F200D04742 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAB52272213D52F200D04742 /* AlbumListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListViewController.swift; sourceTree = "<group>"; };
 		FAB52275213D52F200D04742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,10 +105,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		977A8795239F99B70031C10C /* About Me */ = {
+			isa = PBXGroup;
+			children = (
+				977A8796239F99CB0031C10C /* AboutMeViewController.swift */,
+			);
+			path = "About Me";
+			sourceTree = "<group>";
+		};
 		FA4BF645213DD5D1000A5F96 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FA4BF643213DD59A000A5F96 /* GoogleService-Info.plist */,
 				FAB52270213D52F200D04742 /* AppDelegate.swift */,
 				FA9161E5215426E600FA713D /* Extensions */,
 				FAB52277213D52F400D04742 /* Assets.xcassets */,
@@ -119,6 +128,7 @@
 		FA4BF646213DD9F0000A5F96 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				977A8798239F9F100031C10C /* GoogleService-Info.plist */,
 				FA4BF647213DDB10000A5F96 /* AlbumService.swift */,
 				FA84790821517C5F0044EEE5 /* ImageService.swift */,
 			);
@@ -175,6 +185,7 @@
 		FAA9D257214DA979000DE691 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				977A8795239F99B70031C10C /* About Me */,
 				FA9161E0215413D300FA713D /* Photo Details */,
 				FAA9D25F214DBFDD000DE691 /* Select Photos */,
 				FAA9D258214DA98A000DE691 /* Album Details */,
@@ -219,7 +230,7 @@
 		FAB5226E213D52F200D04742 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FAB5226D213D52F200D04742 /* SwiftFirestorePhotoAlbum.app */,
+				FAB5226D213D52F200D04742 /* ChuckNorrisApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -256,7 +267,7 @@
 			);
 			name = SwiftFirestorePhotoAlbum;
 			productName = SwiftFirestorePhotoAlbum;
-			productReference = FAB5226D213D52F200D04742 /* SwiftFirestorePhotoAlbum.app */;
+			productReference = FAB5226D213D52F200D04742 /* ChuckNorrisApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -298,8 +309,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB5227B213D52F400D04742 /* LaunchScreen.storyboard in Resources */,
-				FA4BF644213DD59A000A5F96 /* GoogleService-Info.plist in Resources */,
 				FAB52278213D52F400D04742 /* Assets.xcassets in Resources */,
+				977A8799239F9F100031C10C /* GoogleService-Info.plist in Resources */,
 				FAB52276213D52F200D04742 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,35 +341,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftFirestorePhotoAlbum/Pods-SwiftFirestorePhotoAlbum-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftFirestorePhotoAlbum/Pods-SwiftFirestorePhotoAlbum-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftFirestorePhotoAlbum/Pods-SwiftFirestorePhotoAlbum-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftFirestorePhotoAlbum/Pods-SwiftFirestorePhotoAlbum-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftFirestorePhotoAlbum/Pods-SwiftFirestorePhotoAlbum-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -389,6 +381,7 @@
 				FA9161E72154271800FA713D /* Storage+Extensions.swift in Sources */,
 				FAA9D262214DC001000DE691 /* SelectPhotosViewController.swift in Sources */,
 				FA9161E42154167C00FA713D /* AlbumDetailsViewController+Delegate.swift in Sources */,
+				977A8797239F99CB0031C10C /* AboutMeViewController.swift in Sources */,
 				FA4BF648213DDB10000A5F96 /* AlbumService.swift in Sources */,
 				FAA9D25C214DB150000DE691 /* AlbumDetailsViewController.swift in Sources */,
 				FA84790921517C5F0044EEE5 /* ImageService.swift in Sources */,
@@ -537,14 +530,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3256U3978R;
+				DEVELOPMENT_TEAM = 44YQUZU3UG;
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftFirestorePhotoAlbum/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = test.SwiftFirestorePhotoAlbum;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Riga-Coding-School.ChuckNorrisApp";
+				PRODUCT_NAME = ChuckNorrisApp;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -556,14 +549,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3256U3978R;
+				DEVELOPMENT_TEAM = 44YQUZU3UG;
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftFirestorePhotoAlbum/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = test.SwiftFirestorePhotoAlbum;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Riga-Coding-School.ChuckNorrisApp";
+				PRODUCT_NAME = ChuckNorrisApp;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
